@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 30px;
+}
+img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+li.tour-card {
+    display: inline-block;
+    border: 1px solid #CCC;
+    border-radius: 7px;
+    padding: 15px;
+    width: 90%;
+    margin: 5%;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+h3 {
+    margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button.not-interested{
+    margin: 20px auto 0;
+    width: 100px;
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid blueviolet;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button.btn-reload{
+    margin: 20px auto 0;
+    width: 150px;
+    display: block;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+    width: 450px;
+    margin: 0 auto;
+}
+.price {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-more {
+    background: transparent;
+    border: none;
+    color: blueviolet;
+    font-weight: bold;
+    text-align: left;
+    display: inline;
+    padding: 0 0 0 3px;
+    width: auto;
+    cursor: pointer;
 }
